@@ -1,0 +1,329 @@
+/* Estilos Básicos */
+body {
+    font-family: 'Jost', sans-serif; /* Aplica a fonte Jost ao corpo inteiro do documento */
+    background-color: #fff; /* Cor de fundo para a página */
+    color: #333; /* Cor de texto padrão */
+    line-height: 1.6; /* Aumenta a linha de base para melhor leitura */
+    letter-spacing: 0.5px; /* Espaçamento leve para melhor fluidez visual */
+    padding-top: 70px; /* Adiciona um padding no topo do body para evitar que o conteúdo fique escondido atrás da barra de navegação fixa */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jost', sans-serif; /* Garante que todos os títulos usam Jost */
+    font-weight: 600; /* Escolha um peso apropriado para os títulos */
+}
+
+p, a, li, span { /* Aplica Jost a outros elementos de texto comuns */
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Peso normal para texto corrido */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho grande para título principal */
+    letter-spacing: -1px; /* Espaçamento negativo para títulos para mais compactação */
+}
+
+h2, h3 {
+    color: #0077CC; /* Cor para títulos, um azul mais escuro */
+}
+
+p {
+    color: #666; /* Cor mais suave para o texto, melhor para leitura */
+    font-size: 1rem; /* Tamanho padrão para parágrafos */
+}
+
+/* Pseudoelemento para compensar a altura da barra de navegação */
+section::before {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Faz o pseudoelemento ser um bloco, ocupando espaço */
+    height: 70px; /* Altura do buffer */
+    margin-top: -70px; /* Desloca para cima para compensar a altura do buffer */
+    visibility: hidden; /* Torna o pseudoelemento invisível */
+}
+
+/* Bootstrap Container Customizado */
+.container {
+    max-width: 1140px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container */
+    padding: 0 15px; /* Padding lateral para o container */
+}
+
+/* Estilização básica da barra de navegação */
+.navbar {
+    background-color: #f8f9fa; /* Fundo claro para a barra de navegação */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para uma separação visual limpa */
+    position: fixed; /* Fixa a barra de navegação no topo */
+    width: 100%; /* Largura total */
+    top: 0; /* Posiciona no topo da página */
+    z-index: 1030; /* Garante que a barra fique sobre outros elementos */
+    height: 60px; /* Define uma altura fixa para a barra de navegação */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #343a40; /* Cor escura para os links para contraste com o fundo claro */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #0056b3; /* Cor mais escura para hover e foco, mais visível */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil para cartões para melhor definição */
+    transition: transform 0.3s; /* Efeito suave para hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito 'levitar' quando mouse passa sobre o cartão */
+}
+
+.card-img-top {
+    width: 100%; /* Assegura que a imagem cubra a largura do cartão */
+    height: 200px; /* Fixa a altura da imagem para uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra completamente o espaço designado sem distorção */
+}
+
+.card-body {
+    padding: 15px; /* Espaçamento interno no corpo do cartão */
+}
+
+.card-title {
+    color: #0056b3; /* Título do cartão em azul */
+}
+
+.card-text {
+    color: #666; /* Texto do cartão em cinza escuro para fácil leitura */
+}
+
+.btn-primary {
+    border: none;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Seção Hero */
+#hero {
+    margin-top: -10px; /* Ajusta a posição da seção Hero para remover espaço extra */
+    position: relative; /* Garante que o ajuste de margem funcione corretamente */
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('images/hero-image.png') no-repeat center center/cover;
+    height: 90vh;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(3, 41, 58, 0.7);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.hero-text {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    color: white;
+}
+
+/* Seção Sobre */
+#about {
+    padding: 50px 0; /* Padding vertical para a seção */
+    background-color: #f8f8f8; /* Cor de fundo suave para a seção Sobre */
+}
+
+#about h2 {
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+#about .lead {
+    font-size: 1.25rem; /* Tamanho de fonte para o texto introdutório */
+    font-weight: 300; /* Peso da fonte para o texto introdutório */
+    text-align: center; /* Centraliza o texto introdutório */
+    margin-bottom: 20px; /* Espaço abaixo do texto introdutório */
+}
+
+/* Grid para as colunas na seção Sobre */
+#about .row {
+    margin-top: 20px; /* Espaço acima do grid de colunas */
+}
+
+#about .col-md-6 {
+    margin-bottom: 20px; /* Espaço abaixo de cada coluna */
+}
+
+/* Estilos adicionais para cabeçalhos das colunas */
+#about h3 {
+    margin-bottom: 15px; /* Espaço abaixo dos sub-títulos */
+}
+
+/* Estilos para parágrafos nas colunas */
+#about p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    padding-right: 15px; /* Padding à direita para alinhamento do texto */
+    padding-left: 15px; /* Padding à esquerda para alinhamento do texto */
+}
+
+.img-top {
+    margin-top: 20px;
+}
+
+/* Seção Serviços */
+#services {
+    background-color: #f0f4f7; /* Um cinza claro que proporciona um contraste suave sem ser muito dominante */
+    padding: 50px 0;
+    color: #333; /* Garantindo que o texto seja legível */
+}
+
+#services h2, #services h3 {
+    color: #0056b3; /* Cor azul para títulos, garantindo que se destaquem sobre o fundo cinza */
+}
+
+#services p {
+    color: #666; /* Cor cinza escuro para texto, para melhor legibilidade */
+}
+
+#services .img-fluid {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.service-image {
+    width: 100%; /* garante que a imagem preencha o container */
+    height: auto; /* mantém a proporção da imagem */
+    max-width: 300px; /* máximo de largura para imagens */
+    margin: 0 auto; /* centraliza a imagem horizontalmente */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .service-image {
+        max-width: 600px; /* ajuste para telas Retina */
+    }
+}
+
+/* Seção Conteúdo de Valor */
+#content-value {
+    background-color: #f8f8f8; /* Um fundo claro para destacar a seção */
+}
+
+/** Seção Prova de Valor **/
+#proof-of-value {
+    background-color: #343a40; /* Um fundo escuro para destacar a seção */
+}
+
+#proof-of-value h2, #proof-of-value p {
+    color: #fff; /* Texto branco para contraste */
+}
+
+#proof-of-value .card {
+    background-color: #ffffff; /* Fundo branco para os cartões */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para destacar os cartões sobre o fundo escuro */
+    transition: transform 0.3s ease-in-out; /* Animação suave para o efeito de levitar */
+}
+
+#proof-of-value .card-body {
+    color: #333; /* Texto escuro para contraste com o fundo claro */
+    padding: 15px; /* Espaçamento interno adequado para o conteúdo do cartão */
+}
+
+#proof-of-value .card-title {
+    color: #007bff; /* Cor azul para os títulos dos cartões, alinhado com a identidade visual */
+}
+
+#proof-of-value .card-text {
+    color: #555; /* Cor de texto mais suave para a descrição, para facilitar a leitura */
+}
+
+/* Seção de Contato */
+#contact {
+    background-color: #f0f4f7; /* Um fundo claro para a seção de contato */
+}
+
+/* Base para o rodapé */
+footer {
+    background-color: #343a40; /* Fundo escuro para contraste */
+    color: #ccc; /* Cor de texto geral para legibilidade */
+    padding: 20px 0; /* Padding para espaçamento interno */
+}
+
+/* Títulos no rodapé */
+footer h5 {
+    color: #fff; /* Títulos em branco para destaque */
+}
+
+/* Texto normal no rodapé */
+footer p, footer li {
+    color: #ccc; /* Texto em cinza claro */
+}
+
+/* Links no rodapé */
+footer a, footer a:link, footer a:visited {
+    color: #79cae8 !important; /* Azul claro para links, forçando a cor com !important */
+    text-decoration: none; /* Sem sublinhado para links */
+}
+
+footer a:hover, footer a:focus {
+    color: #ffffff !important; /* Branco para hover e foco, com !important para garantir aplicação */
+    text-decoration: underline !important; /* Sublinhado para destacar interatividade */
+}
+
+/* Botões no rodapé */
+footer .btn-primary {
+    background-color: #007bff; /* Cor do botão */
+    border: none; /* Sem borda para botões */
+}
+
+footer .btn-primary:hover, footer .btn-primary:focus {
+    background-color: #0056b3; /* Cor mais escura no hover e foco */
+}
+
+/* Formulário de newsletter */
+input[type="email"], textarea, button[type="submit"] {
+    width: 100%; /* Largura total para melhor layout */
+    margin-top: 10px; /* Espaço acima do campo para separação visual */
+}
+
+/* Estilos adicionais para melhorar o layout em dispositivos menores */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
