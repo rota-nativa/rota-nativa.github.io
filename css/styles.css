@@ -1,0 +1,153 @@
+.section {
+    margin-top: 80px; /* Ajuste de acordo com a altura da sua navbar */
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    scroll-margin-top: 60px; /* Espaço para não ser coberto pela navbar */
+}
+
+/* Seção Hero */
+#hero {
+    margin-top: -15px; /* Ajusta a posição da seção Hero para remover espaço extra */
+    position: relative; /* Garante que o ajuste de margem funcione corretamente */
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    height: 90vh;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(3, 41, 58, 0.7);
+    padding: 20px 0;
+    width: 100%;
+}
+
+.hero-text {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    color: white;
+}
+
+/* Seção Sobre */
+.img-top {
+    margin-top: 20px;
+}
+
+#about {
+    padding: 50px 0; /* Padding vertical para a seção */
+    background-color: #f8f8f8; /* Cor de fundo suave para a seção Sobre */
+}
+
+#about h2 {
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+#about .lead {
+    font-size: 1.25rem; /* Tamanho de fonte para o texto introdutório */
+    font-weight: 300; /* Peso da fonte para o texto introdutório */
+    text-align: center; /* Centraliza o texto introdutório */
+    margin-bottom: 20px; /* Espaço abaixo do texto introdutório */
+}
+
+/* Grid para as colunas na seção Sobre */
+#about .row {
+    margin-top: 20px; /* Espaço acima do grid de colunas */
+}
+
+#about .col-md-6 {
+    margin-bottom: 20px; /* Espaço abaixo de cada coluna */
+}
+
+/* Estilos adicionais para cabeçalhos das colunas */
+#about h3 {
+    margin-bottom: 15px; /* Espaço abaixo dos sub-títulos */
+}
+
+/* Estilos para parágrafos nas colunas */
+#about p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    padding-right: 15px; /* Padding à direita para alinhamento do texto */
+    padding-left: 15px; /* Padding à esquerda para alinhamento do texto */
+}
+
+/* Seção Serviços */
+#services {
+    background-color: #f0f4f7; /* Um cinza claro que proporciona um contraste suave sem ser muito dominante */
+    padding: 50px 0;
+    color: #333; /* Garantindo que o texto seja legível */
+}
+
+#services h2, #services h3 {
+    color: #0056b3; /* Cor azul para títulos, garantindo que se destaquem sobre o fundo cinza */
+}
+
+#services p {
+    color: #666; /* Cor cinza escuro para texto, para melhor legibilidade */
+}
+
+#services .img-fluid {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.service-image {
+    width: 100%; /* garante que a imagem preencha o container */
+    height: auto; /* mantém a proporção da imagem */
+    max-width: 300px; /* máximo de largura para imagens */
+    margin: 0 auto; /* centraliza a imagem horizontalmente */
+}
+
+/* Seção Conteúdo de Valor */
+#content-value {
+    background-color: #f8f8f8; /* Um fundo claro para destacar a seção */
+}
+
+/** Seção Prova de Valor **/
+#proof-of-value {
+    background-color: #343a40; /* Um fundo escuro para destacar a seção */
+}
+
+#proof-of-value h2, #proof-of-value p {
+    color: #fff; /* Texto branco para contraste */
+}
+
+#proof-of-value .card {
+    background-color: #ffffff; /* Fundo branco para os cartões */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para destacar os cartões sobre o fundo escuro */
+    transition: transform 0.3s ease-in-out; /* Animação suave para o efeito de levitar */
+}
+
+#proof-of-value .card-body {
+    color: #333; /* Texto escuro para contraste com o fundo claro */
+    padding: 15px; /* Espaçamento interno adequado para o conteúdo do cartão */
+}
+
+#proof-of-value .card-title {
+    color: #007bff; /* Cor azul para os títulos dos cartões, alinhado com a identidade visual */
+}
+
+#proof-of-value .card-text {
+    color: #555; /* Cor de texto mais suave para a descrição, para facilitar a leitura */
+}
+
+/* Seção de Contato */
+#contact {
+    background-color: #f0f4f7; /* Um fundo claro para a seção de contato */
+}

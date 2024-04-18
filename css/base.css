@@ -1,0 +1,106 @@
+/* Estilos Básicos */
+body {
+    font-family: 'Jost', sans-serif; /* Aplica a fonte Jost ao corpo inteiro do documento */
+    background-color: #fff; /* Cor de fundo para a página */
+    color: #333; /* Cor de texto padrão */
+    line-height: 1.6; /* Aumenta a linha de base para melhor leitura */
+    letter-spacing: 0.5px; /* Espaçamento leve para melhor fluidez visual */
+    padding-top: 70px !important; /* Adiciona um padding no topo do body para evitar que o conteúdo fique escondido atrás da barra de navegação fixa */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jost', sans-serif; /* Garante que todos os títulos usam Jost */
+    font-weight: 600; /* Escolha um peso apropriado para os títulos */
+}
+
+p, a, li, span { /* Aplica Jost a outros elementos de texto comuns */
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Peso normal para texto corrido */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho grande para título principal */
+    letter-spacing: -1px; /* Espaçamento negativo para títulos para mais compactação */
+}
+
+h2, h3 {
+    color: #0077CC; /* Cor para títulos, um azul mais escuro */
+}
+
+p {
+    color: #666; /* Cor mais suave para o texto, melhor para leitura */
+    font-size: 1rem; /* Tamanho padrão para parágrafos */
+}
+
+/* Bootstrap Container Customizado */
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil para cartões para melhor definição */
+    transition: transform 0.3s; /* Efeito suave para hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito 'levitar' quando mouse passa sobre o cartão */
+}
+
+.card-img-top {
+    width: 100%; /* Assegura que a imagem cubra a largura do cartão */
+    height: 200px; /* Fixa a altura da imagem para uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra completamente o espaço designado sem distorção */
+}
+
+.card-body {
+    padding: 15px; /* Espaçamento interno no corpo do cartão */
+}
+
+.card-title {
+    color: #0056b3; /* Título do cartão em azul */
+}
+
+.card-text {
+    color: #666; /* Texto do cartão em cinza escuro para fácil leitura */
+}
+
+.btn-primary {
+    border: none;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .service-image {
+        max-width: 600px; /* ajuste para telas Retina */
+    }
+}
+
+/* Estilos adicionais para melhorar o layout em dispositivos menores */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

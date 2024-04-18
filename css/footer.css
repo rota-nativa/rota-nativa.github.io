@@ -1,0 +1,43 @@
+/* Base para o rodapé */
+footer {
+    background-color: #343a40; /* Fundo escuro para contraste */
+    color: #ccc; /* Cor de texto geral para legibilidade */
+    padding: 20px 0; /* Padding para espaçamento interno */
+}
+
+/* Títulos no rodapé */
+footer h5 {
+    color: #fff; /* Títulos em branco para destaque */
+}
+
+/* Texto normal no rodapé */
+footer p, footer li {
+    color: #ccc; /* Texto em cinza claro */
+}
+
+/* Links no rodapé */
+footer a, footer a:link, footer a:visited {
+    color: #79cae8 !important; /* Azul claro para links, forçando a cor com !important */
+    text-decoration: none; /* Sem sublinhado para links */
+}
+
+footer a:hover, footer a:focus {
+    color: #ffffff !important; /* Branco para hover e foco, com !important para garantir aplicação */
+    text-decoration: underline !important; /* Sublinhado para destacar interatividade */
+}
+
+/* Botões no rodapé */
+footer .btn-primary {
+    background-color: #007bff; /* Cor do botão */
+    border: none; /* Sem borda para botões */
+}
+
+footer .btn-primary:hover, footer .btn-primary:focus {
+    background-color: #0056b3; /* Cor mais escura no hover e foco */
+}
+
+/* Formulário de newsletter */
+input[type="email"], textarea, button[type="submit"] {
+    width: 100%; /* Largura total para melhor layout */
+    margin-top: 10px; /* Espaço acima do campo para separação visual */
+}
