@@ -48,6 +48,29 @@ section::before {
     padding: 0 15px; /* Padding lateral para o container */
 }
 
+/* Estilização para o Navbar no modo responsivo */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #ffffff; /* Define um fundo branco para o menu dropdown */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Aplica uma sombra leve para destacar o menu do fundo da página */
+        padding: 10px 15px; /* Adiciona espaçamento interno para evitar que os itens toquem as bordas */
+    }
+
+    .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0.1); /* Define a cor da borda para o botão toggler se necessário */
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #343a40; /* Assegura que os links são visíveis contra o fundo claro */
+        padding: 8px 12px; /* Aumenta o padding para melhor toque e separação visual */
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link:focus {
+        color: #0056b3; /* Cor mais escura para hover e foco */
+    }
+}
+
 /* Estilização básica da barra de navegação */
 .navbar {
     background-color: #f8f9fa; /* Fundo claro para a barra de navegação */
@@ -326,4 +349,3 @@ input[type="email"], textarea, button[type="submit"] {
         max-width: 100%;
     }
 }
-
