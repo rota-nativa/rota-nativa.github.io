@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Rota Nativa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-blog.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <main id="main-content" class="main-content">
+            <div id="blog-posts">
+                <!-- Posts serão injetados aqui -->
+            </div>
+            <div id="pagination" class="pagination">
+                <button id="prevPage">Anterior</button>
+                <span id="pageIndicator">Page 1</span>
+                <button id="nextPage">Próxima</button>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#">Turismo</a></li>
+                <li><a href="#">Cultura Local</a></li>
+                <li><a href="#">Gastronomia</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="scripts/loadComponents.js" defer></script>
+    <script src="scripts/fetchPosts.js" defer></script>
+</body>
+</html>
