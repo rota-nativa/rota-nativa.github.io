@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop();
+
     // Carregar a Navbar
     fetch('components/navbar.html')
         .then(response => response.text())
         .then(html => {
             const navbarPlaceholder = document.getElementById('navbar-placeholder');
             navbarPlaceholder.innerHTML = html;
-            updateNavbarLinks(); // Atualiza os links após carregar a navbar
+            updateLinks(currentPage, 'navbar-placeholder'); // Atualiza os links após carregar a navbar
         });
 
     // Carregar o Footer
@@ -13,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(html => {
             document.getElementById('footer-placeholder').innerHTML = html;
+            updateLinks(currentPage, 'footer-placeholder'); // Atualiza os links após carregar o footer
         });
 });
 
-function updateNavbarLinks() {
-    const currentPage = window.location.pathname.split('/').pop();
-    document.querySelectorAll('#navbar-placeholder a').forEach(link => {
+function updateLinks(currentPage, selectorId) {
+    document.querySelectorAll(`#${selectorId} a`).forEach(link => {
         if (link.getAttribute('href').includes(currentPage)) {
             link.classList.add('active'); // Adiciona a classe 'active' se estiver na página atual
         }
