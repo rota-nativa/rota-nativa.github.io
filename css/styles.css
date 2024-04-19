@@ -1,5 +1,4 @@
 .section {
-    margin-top: 80px; /* Ajuste de acordo com a altura da sua navbar */
     padding: 20px;
     background-color: #f4f4f4;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -121,11 +120,11 @@
 
 /** Seção Prova de Valor **/
 #proof-of-value {
-    background-color: #343a40; /* Um fundo escuro para destacar a seção */
+    background-color: #343a40 /* Um fundo escuro para destacar a seção */
 }
 
 #proof-of-value h2, #proof-of-value p {
-    color: #fff; /* Texto branco para contraste */
+    color: #fff !important; /* Texto branco para contraste */
 }
 
 #proof-of-value .card {
@@ -144,7 +143,7 @@
 }
 
 #proof-of-value .card-text {
-    color: #555; /* Cor de texto mais suave para a descrição, para facilitar a leitura */
+    color: #555 !important; /* Cor de texto mais suave para a descrição, para facilitar a leitura */
 }
 
 /* Seção de Contato */

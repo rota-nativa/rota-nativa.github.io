@@ -7,35 +7,58 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/style-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
     <!-- Navbar -->
     <div id="navbar-placeholder"></div>
-
     <div class="container">
-        <main id="main-content" class="main-content">
-            <div id="blog-posts">
-                <!-- Posts serão injetados aqui -->
+        <main class="main-content">
+            <div class="posts" id="posts-container">
+                <div id="post-list">
+                    <!-- Os posts serão carregados dinamicamente aqui -->
+                </div>
+                <div id="pagination-container" class="pagination">
+                    <button id="prevPage">Anterior</button>
+                    <span id="pageIndicator">Página 1</span>
+                    <button id="nextPage">Próxima</button>
+                </div>
             </div>
-            <div id="pagination" class="pagination">
-                <button id="prevPage">Anterior</button>
-                <span id="pageIndicator">Page 1</span>
-                <button id="nextPage">Próxima</button>
-            </div>
+            <aside class="sidebar">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Turismo</a></li>
+                    <li><a href="#">Cultura Local</a></li>
+                    <li><a href="#">Gastronomia</a></li>
+                </ul>
+            </aside>
         </main>
-
-        <aside class="sidebar">
-            <h3>Categorias</h3>
-            <ul>
-                <li><a href="#">Turismo</a></li>
-                <li><a href="#">Cultura Local</a></li>
-                <li><a href="#">Gastronomia</a></li>
-            </ul>
-        </aside>
     </div>
+<!--    <div class="container">-->
+<!--        <main id="main-content" class="main-content">-->
+<!--            <div id="blog-posts">-->
+<!--                &lt;!&ndash; Posts serão injetados aqui &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div id="pagination" class="pagination">-->
+<!--                <button id="prevPage">Anterior</button>-->
+<!--                <span id="pageIndicator">Page 1</span>-->
+<!--                <button id="nextPage">Próxima</button>-->
+<!--            </div>-->
+<!--        </main>-->
+
+<!--        <aside class="sidebar">-->
+<!--            <h3>Categorias</h3>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Turismo</a></li>-->
+<!--                <li><a href="#">Cultura Local</a></li>-->
+<!--                <li><a href="#">Gastronomia</a></li>-->
+<!--            </ul>-->
+<!--        </aside>-->
+<!--    </div>-->
 
     <!-- Rodapé -->
     <div id="footer-placeholder"></div>

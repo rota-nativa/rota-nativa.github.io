@@ -24,7 +24,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #0077CC; /* Cor para títulos, um azul mais escuro */
+    color: #0077CC !important; /* Cor para títulos, um azul mais escuro */
 }
 
 p {

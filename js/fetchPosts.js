@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const postsContainer = document.getElementById('blog-posts');
+    const postsContainer = document.getElementById('post-list');
     const pageIndicator = document.getElementById('pageIndicator');
     const prevButton = document.getElementById('prevPage');
     const nextButton = document.getElementById('nextPage');
@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
         postsContainer.innerHTML = '';
         posts.forEach(post => {
             const postElement = document.createElement('div');
-            postElement.className = 'blog-post';
+            postElement.className = 'post';
             const markedContent = marked.parse(post.content);
             const cleanHTML = DOMPurify.sanitize(markedContent);
             postElement.innerHTML = `
-                <h2 class="display-6">${post.title}</h2>
+                <h1 class="display-6">${post.title}</h1>
                 <img src="${post.featuredImage}" alt="${post.title}" loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
                 <p>${cleanHTML}</p>
-                <a href="post-details.html?id=${post.id}">Read more...</a>
+                <a href="post-details.html?id=${post.id}" class="btn btn-primary">Leia mais...</a>
             `;
             postsContainer.appendChild(postElement);
         });
