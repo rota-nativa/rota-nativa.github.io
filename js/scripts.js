@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
         while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
         navLinks.forEach((link) => link.classList.remove('active'));
-        navLinks[index].classList.add('active');
+        if (index !== 0) {
+            navLinks[index]?.classList.add('active');
+        }
     }
 
     updateActiveLink();  // Atualiza na carga da página
