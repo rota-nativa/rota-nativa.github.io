@@ -51,3 +51,7 @@ nav ul li {
         color: #0056b3; /* Cor mais escura para hover e foco */
     }
 }
+
+.navbar .whatsapp-cta-button {
+    margin-top: 0;
+}

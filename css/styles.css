@@ -29,17 +29,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background: rgba(3, 41, 58, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
     width: 100%;
 }
 
 .hero-text {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-text p {
     color: white;
+}
+
+.whatsapp-cta-button {
+    display: inline-block;
+    background-color: #25D366; /* Cor verde WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    /*font-weight: bold;*/
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-cta-button:hover {
+    background-color: #128C7E;
+}
+
+.text-emphasis {
+    font-weight: bold;
 }
 
 /* Seção Sobre */
@@ -89,15 +109,15 @@
 #services {
     background-color: #f0f4f7; /* Um cinza claro que proporciona um contraste suave sem ser muito dominante */
     padding: 50px 0;
-    color: #333; /* Garantindo que o texto seja legível */
+    color: #fff; /* Garantindo que o texto seja legível */
 }
 
 #services h2, #services h3 {
-    color: #0056b3; /* Cor azul para títulos, garantindo que se destaquem sobre o fundo cinza */
+    color: #fff !important; /* Cor azul para títulos, garantindo que se destaquem sobre o fundo cinza */
 }
 
 #services p {
-    color: #666; /* Cor cinza escuro para texto, para melhor legibilidade */
+    color: #fff; /* Cor cinza escuro para texto, para melhor legibilidade */
 }
 
 #services .img-fluid {
@@ -120,12 +140,12 @@
 
 /** Seção Prova de Valor **/
 #proof-of-value {
-    background-color: #343a40 /* Um fundo escuro para destacar a seção */
+    background-color: #f0f4f7 /* Um fundo escuro para destacar a seção */
 }
 
-#proof-of-value h2, #proof-of-value p {
-    color: #fff !important; /* Texto branco para contraste */
-}
+/*#proof-of-value h2, #proof-of-value p {*/
+/*    color: #fff !important; !* Texto branco para contraste *!*/
+/*}*/
 
 #proof-of-value .card {
     background-color: #ffffff; /* Fundo branco para os cartões */

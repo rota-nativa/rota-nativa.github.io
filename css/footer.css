@@ -41,3 +41,44 @@ input[type="email"], textarea, button[type="submit"] {
     width: 100%; /* Largura total para melhor layout */
     margin-top: 10px; /* Espaço acima do campo para separação visual */
 }
+
+#cta-ana-section .container {
+    text-align: center;
+    padding: 20px;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem !important;
+    background-color: #f0f4f7;  /* A cor de fundo pode ser ajustada conforme necessário */
+    height: 100%;
+}
+
+#cta-ana-section .container p {
+    color: #333;
+}
+
+#cta-ana-section a {
+    padding: 20px;
+    text-align: left;
+    color: white !important;
+    text-decoration: none;
+}
+
+#cta-ana-section a:hover {
+    text-decoration: none !important;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;  /* Cor verde WhatsApp */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.whatsapp-button img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}

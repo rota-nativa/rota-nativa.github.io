@@ -23,7 +23,7 @@ h1 {
     letter-spacing: -1px; /* Espaçamento negativo para títulos para mais compactação */
 }
 
-h2, h3 {
+h2, h3, h5 {
     color: #0077CC !important; /* Cor para títulos, um azul mais escuro */
 }
 
