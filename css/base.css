@@ -27,7 +27,7 @@ h2, h3, h5 {
     color: #0077CC !important; /* Cor para títulos, um azul mais escuro */
 }
 
-p {
+p, li {
     color: #666; /* Cor mais suave para o texto, melhor para leitura */
     font-size: 1rem; /* Tamanho padrão para parágrafos */
 }
@@ -84,6 +84,27 @@ p {
     color: #fff;
     background-color: #0056b3 !important;
     border-color: #0056b3 !important;
+}
+
+
+.whatsapp-cta-button {
+    display: inline-block;
+    background-color: #25D366; /* Cor verde WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    /*font-weight: bold;*/
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-cta-button:hover {
+    background-color: #128C7E;
+}
+
+.text-emphasis {
+    font-weight: bold;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),

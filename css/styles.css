@@ -42,26 +42,6 @@
     color: white;
 }
 
-.whatsapp-cta-button {
-    display: inline-block;
-    background-color: #25D366; /* Cor verde WhatsApp */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    /*font-weight: bold;*/
-    margin-top: 20px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.whatsapp-cta-button:hover {
-    background-color: #128C7E;
-}
-
-.text-emphasis {
-    font-weight: bold;
-}
-
 /* Seção Sobre */
 .img-top {
     margin-top: 20px;
