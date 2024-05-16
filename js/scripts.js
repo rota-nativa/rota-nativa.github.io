@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Anexa o evento click ao body e delega para links na navbar
     document.body.addEventListener('click', function(e) {
         // Verifica se o clique é em um link da navbar que não leva à página de blog
-        if (e.target.matches('.navbar-nav .nav-link') && !e.target.href.includes('blog.html')) {
+        if (
+            (e.target.matches('.navbar .navbar-brand') || e.target.matches('.navbar-nav .nav-link'))
+            && !e.target?.href?.includes('blog.html')
+        ) {
             const navbarToggler = document.querySelector('.navbar-toggler');
             const navbarCollapse = document.querySelector('.navbar-collapse');
-            const targetId = e.target.getAttribute('href');
+            const targetId = e.target.getAttribute('href') ?? e.target.parentElement.getAttribute('href');
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
