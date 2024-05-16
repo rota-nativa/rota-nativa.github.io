@@ -82,3 +82,11 @@ input[type="email"], textarea, button[type="submit"] {
 .whatsapp-button:hover {
     background-color: #128C7E;
 }
+
+/* Estilização para o modo responsivo */
+@media (max-width: 991px) {
+    #cta-ana-section .container {
+        margin-top: 1rem;
+        margin-bottom: 1rem !important;
+    }
+}
