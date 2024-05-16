@@ -21,12 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateLinks(currentPage, selectorId) {
     document.querySelectorAll(`#${selectorId} a`).forEach(link => {
-        if (link.getAttribute('href').includes(currentPage)) {
-            link.classList.add('active'); // Adiciona a classe 'active' se estiver na página atual
-        }
         // Corrige os links para referenciar corretamente as seções na página inicial
-        if (link.hash && currentPage !== 'index.html') {
-            link.href = '/index.html' + link.hash;
+        if (link.hash && currentPage !== '') {
+            link.href = '/' + link.hash;
         }
     });
 }
