@@ -35,252 +35,250 @@
     <meta property="og:image:height" content="181">
 
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/new.css">    
 </head>
 <body id="home">
-    <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <!-- Seção Hero -->
-    <div id="hero" class="container-fluid p-0">
-        <div class="hero-section">
-            <img src="./images/hero-image.png" class="img-fluid" alt="Orla de João Pessoa com a visão de fundo para os prédios">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <h1>Participe da nossa Lista de Espera!</h1>
-                    <p>Inscreva-se agora e ganhe 20 créditos ao lançamento dos nossos serviços, com acesso antecipado exclusivo.</p>
-                </div>
-                <a href="https://wa.me/message/7T7FMJFXRF2MI1" target="_blank" class="whatsapp-cta-button">
-                    Junte-se à Lista de Espera via <span class="text-emphasis">WhatsApp</span>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="images/logo.png" alt="Rota Nativa">
+        </a>
+        <nav class="nav">
+            <a href="/">Home</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#contato">Contato</a>
+            <!-- TODO: Add link -->
+            <a href="/" class="cta-button">Comece sua Rota</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <main>
+            <div class="hero-content">
+                <h1 class="hero-title">Mais que turista,<br>um nativo.</h1>
+                <!-- TODO: Add link -->
+                <a href="/descubra" class="discover-button">
+                    Descubra Agora <i data-lucide="move-right"></i>
                 </a>
             </div>
-        </div>
-    </div>
-    <!-- Seção Sobre -->
-    <section id="about" class="section py-5">
-        <div class="container">
-            <h2 class="pb-3 text-center">Sobre a Rota Nativa</h2>
-            <p class="lead text-center">
-                Na Rota Nativa, transformamos a arte de viajar em uma jornada de descobertas autênticas e personalizadas. Nossa abordagem integra experiências culturais profundas com gerenciamento inteligente de orçamento, assegurando que cada aventura seja única, recompensadora e ajustada aos seus desejos.
-            </p>
-            <div class="row pt-4">
-                <div class="col-lg-6">
-                    <h3>Nossa Missão</h3>
-                    <p>
-                        Nossa missão é enriquecer sua experiência de viagem com momentos autênticos e personalizados. Utilizamos conhecimento local extensivo para criar itinerários que não apenas revelam a essência de cada destino, mas também se adaptam a seus interesses pessoais, garantindo conforto, conveniência e uma experiência verdadeiramente única.
-                    </p>
-                    <img src="images/mission-related-image.png" alt="Imagem Relacionada à Missão" class="img-fluid">
-                </div>
-                <div class="col-lg-6">
-                    <h3>Nossa História</h3>
-                    <img src="images/landscape-personal-image.png" alt="Imagem Ralcionada à História e humanização da experiência" class="img-fluid img-top mb-3">
-                    <p>
-                        A Rota Nativa foi criada por entusiastas de viagens que perceberam a necessidade de uma abordagem mais integrada e pessoal no turismo. Nossas próprias experiências, explorando diversos destinos e imergindo em culturas locais, mostraram-nos a importância de viagens planejadas com cuidado e uma imersão cultural profunda. Estes princípios agora são a base de cada itinerário que desenvolvemos, ajudando viajantes a descobrir não apenas lugares, mas novas maneiras de ver o mundo.
-                    </p>
-                    <p>
-                        A inspiração para a Rota Nativa veio das próprias experiências do fundador explorando novos destinos com a sua família. Como entusiastas de viagens, passamos horas assistindo vídeos, explorando culinárias locais e planejando cada passo para absorver profundamente a cultura local. Nossas jornadas, ricas em descobertas gastronômicas e experiências culturais, nos ensinaram a importância de um planejamento cuidadoso e de viver plenamente cada momento — princípios que agora formam o coração de cada itinerário que criamos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Seção Serviços -->
-    <section id="services" class="section py-5 bg-dark text-white">
-        <div class="container">
-            <h2 class="pb-3 text-center">Nossos Serviços</h2>
-            <p class="lead text-center">
-                Explore João Pessoa como nunca antes com os serviços personalizados da Rota Nativa. Desde itinerários personalizados até gestão meticulosa do orçamento, nós cuidamos de todos os detalhes para transformar sua aventura em uma experiência inesquecível, seja você um visitante ou um morador local redescobrindo sua cidade.
-            </p>
-            <div class="row pt-4">
-                <div class="col-md-6 col-lg-3 text-center">
-                    <img src="images/itinerary.png" alt="Itinerários Personalizados" class="img-fluid mb-3 service-image">
-                    <h3>Itinerários Personalizados</h3>
-                    <p>Descubra João Pessoa através de rotas cuidadosamente planejadas que atendem seus interesses pessoais. Nossos itinerários personalizados são criados para explorar o melhor da cultura, natureza, e gastronomia local, garantindo que cada passeio seja uma aventura única e enriquecedora.</p>
-<!--                    <a href="#" class="btn btn-primary">Descubra Mais</a>-->
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <img src="images/budget.png" alt="Gestão de Orçamento de Viagem" class="img-fluid mb-3 service-image">
-                    <h3>Gestão de Orçamento de Viagem</h3>
-                    <p>Viaje com tranquilidade sabendo que seu orçamento está bem administrado. Nossa gestão de orçamento de viagem assegura transparência total e controle sobre seus gastos, permitindo que você desfrute ao máximo sem preocupações financeiras.</p>
-<!--                    <a href="#" class="btn btn-primary">Gerencie seu Orçamento</a>-->
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <img src="images/local-experience.png" alt="Experiências Locais Autênticas" class="img-fluid mb-3 service-image">
-                    <h3>Experiências Locais Autênticas</h3>
-                    <p>Viva João Pessoa como um local com nossas experiências autênticas. Acesso exclusivo a ateliês de artistas, degustações culinárias únicas, e locais pouco conhecidos, nossas experiências vão além dos tradicionais pontos turísticos.</p>
-<!--                    <a href="#" class="btn btn-primary">Explore como Local</a>-->
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <img src="images/weekend-planning.png" alt="Planejamento de Finais de Semana" class="img-fluid mb-3 service-image">
-                    <h3>Planejamento de Finais de Semana</h3>
-                    <p>Redescubra sua cidade com nossos planejamentos de final de semana personalizados. Ideal para moradores que desejam explorar novas atrações ou revisitar seus lugares favoritos com um olhar fresco, nossos roteiros combinam lazer e cultura para criar finais de semana memoráveis.</p>
-<!--                    <a href="#" class="btn btn-primary">Planeje seu Fim de Semana</a>-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 mb-4 text-center">
-                    <a href="https://wa.me/message/7T7FMJFXRF2MI1" target="_blank" class="whatsapp-cta-button">
-                        Junte-se à Lista de Espera via <span class="text-emphasis">WhatsApp</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Seção Conteúdo de Valor -->
-<!--    <section id="content-value" class="section py-5 bg-light">-->
-<!--        <div class="container">-->
-<!--            <h2 class="pb-3 text-center">Explore Mais</h2>-->
-<!--            <p class="lead text-center">-->
-<!--                Enriqueça sua visita a João Pessoa com nosso conteúdo exclusivo. Desde orientações completas até dicas essenciais, reunimos informações valiosas para transformar sua experiência de viagem em uma aventura memorável.-->
-<!--            </p>-->
-<!--            <div class="row pt-4">-->
-<!--                &lt;!&ndash; Orientações de Viagem &ndash;&gt;-->
-<!--                <div class="col-md-6 col-lg-3 mb-4">-->
-<!--                    <div class="card">-->
-<!--                        <img src="images/guide.png" class="card-img-top img-fluid" alt="Guias de Viagem">-->
-<!--                        <div class="card-body">-->
-<!--                            <h5 class="card-title">Orientações de Viagem</h5>-->
-<!--                            <p class="card-text">Descubra João Pessoa através de nossas orientações abrangentes. Cada guia oferece informações completas sobre as principais atrações, revelando tanto locais populares quanto tesouros escondidos. Com nossas dicas, você aproveitará ao máximo cada visita, entendendo melhor cada local.</p>-->
-<!--                            <a href="#" class="btn btn-primary">Leia Mais</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; Dicas de Viagem Locais &ndash;&gt;-->
-<!--                <div class="col-md-6 col-lg-3 mb-4">-->
-<!--                    <div class="card">-->
-<!--                        <img src="images/local-tips.png" class="card-img-top img-fluid" alt="Dicas Locais">-->
-<!--                        <div class="card-body">-->
-<!--                            <h5 class="card-title">Dicas de Viagem Locais</h5>-->
-<!--                            <p class="card-text">Aproveite ao máximo sua estadia com nossas dicas locais. Desde restaurantes pouco conhecidos até eventos culturais exclusivos, nossas recomendações são feitas para que você vivencie João Pessoa como um morador local.</p>-->
-<!--                            <a href="#" class="btn btn-primary">Descubra</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; Histórias de Viajantes &ndash;&gt;-->
-<!--                <div class="col-md-6 col-lg-3 mb-4">-->
-<!--                    <div class="card">-->
-<!--                        <img src="images/traveler-stories.png" class="card-img-top img-fluid" alt="Histórias de Viajantes">-->
-<!--                        <div class="card-body">-->
-<!--                            <h5 class="card-title">Histórias de Viajantes</h5>-->
-<!--                            <p class="card-text">Inspire-se com as histórias de viajantes que escolheram João Pessoa como seu destino. Nossos relatos pessoais oferecem novas perspectivas e experiências enriquecedoras, mostrando diferentes maneiras de desfrutar da cidade.</p>-->
-<!--                            <a href="#" class="btn btn-primary">Inspire-se</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; Suporte Personalizado &ndash;&gt;-->
-<!--                <div class="col-md-6 col-lg-3 mb-4">-->
-<!--                    <div class="card">-->
-<!--                        <img src="images/support.png" class="card-img-top img-fluid" alt="Suporte Personalizado">-->
-<!--                        <div class="card-body">-->
-<!--                            <h5 class="card-title">Suporte Personalizado</h5>-->
-<!--                            <p class="card-text">Receba assistência personalizada em tempo real através do WhatsApp. Nosso suporte dedicado garante acompanhamento detalhado em cada etapa da sua viagem, do planejamento inicial ao seu retorno, para garantir que tudo corra perfeitamente.</p>-->
-<!--                            <a href="#" class="btn btn-primary">Converse Agora</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- Seção Prova de Valor -->
-    <section id="proof-of-value" class="section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Confiança e Excelência Comprovadas</h2>
-            <p class="lead text-center mb-5">
-                Comprometimento com a satisfação total é o que nos move na Rota Nativa. Veja como nosso compromisso com a qualidade e a inovação transforma cada viagem em uma experiência extraordinária.
-            </p>
-            <div class="row">
-                <!-- Compromisso com a Qualidade -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-light text-dark">
-                        <img src="images/quality.png" class="card-img-top" alt="Compromisso com a Qualidade">
-                        <div class="card-body">
-                            <h5 class="card-title">Compromisso com a Qualidade</h5>
-                            <p class="card-text">Nosso processo de planejamento de viagens é meticulosamente desenhado para garantir que cada aspecto de sua experiência seja excepcional.</p>
-<!--                            <a href="#" class="btn btn-primary">Garanta Sua Viagem</a>-->
-                        </div>
-                    </div>
-                </div>
-                <!-- Normas e Certificações -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-light text-dark">
-                        <img src="images/certification.png" class="card-img-top" alt="Normas e Certificações">
-                        <div class="card-body">
-                            <h5 class="card-title">Normas e Certificações</h5>
-                            <p class="card-text">Seguimos as melhores práticas da indústria e estamos em processo de obter certificações que asseguram nosso profissionalismo.</p>
-<!--                            <a href="#services" class="btn btn-primary">Conheça Nossos Serviços</a>-->
-                        </div>
-                    </div>
-                </div>
-                <!-- Estratégias Baseadas em Dados -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-light text-dark">
-                        <img src="images/data.png" class="card-img-top" alt="Estratégias Baseadas em Dados">
-                        <div class="card-body">
-                            <h5 class="card-title">Estratégias Baseadas em Dados</h5>
-                            <p class="card-text">Utilizamos dados avançados para desenhar itinerários que encantam e são eficazes, assegurando a satisfação completa.</p>
-<!--                            <a href="#" class="btn btn-primary">Explore Histórias</a>-->
-                        </div>
-                    </div>
-                </div>
-                <!-- Compromisso Ambiental e Social -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-light text-dark">
-                        <img src="images/environment.png" class="card-img-top" alt="Compromisso Ambiental e Social">
-                        <div class="card-body">
-                            <h5 class="card-title">Compromisso Ambiental e Social</h5>
-                            <p class="card-text">Adotamos práticas que minimizam o impacto ambiental e maximizam o benefício para as comunidades locais.</p>
-<!--                            <a href="#" class="btn btn-primary">Nossas Práticas</a>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 mb-4 text-center">
-                    <a href="https://wa.me/message/7T7FMJFXRF2MI1" target="_blank" class="whatsapp-cta-button">
-                        Junte-se à Lista de Espera via <span class="text-emphasis">WhatsApp</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Seção de Contato -->
-<!--    <section id="contact" class="section py-5 bg-light">-->
-<!--        <div class="container">-->
-<!--            <h2 class="text-center mb-4">Fale Conosco</h2>-->
-<!--            <p class="lead text-center mb-5">-->
-<!--                Estamos prontos para ajudar você a planejar sua próxima aventura em João Pessoa. Entre em contato conosco para mais informações, dúvidas ou para iniciar o seu planejamento personalizado hoje mesmo!-->
-<!--            </p>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-8 mx-auto">-->
-<!--                    <form>-->
-<!--                        <div class="mb-3">-->
-<!--                            <label for="name" class="form-label">Nome Completo</label>-->
-<!--                            <input type="text" class="form-control" id="name" required>-->
-<!--                        </div>-->
-<!--                        <div class="mb-3">-->
-<!--                            <label for="email" class="form-label">Endereço de E-mail</label>-->
-<!--                            <input type="email" class="form-control" id="email" required>-->
-<!--                        </div>-->
-<!--                        <div class="mb-3">-->
-<!--                            <label for="message" class="form-label">Mensagem</label>-->
-<!--                            <textarea class="form-control" id="message" rows="4" required></textarea>-->
-<!--                        </div>-->
-<!--                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
-    <!-- Rodapé -->
-    <div id="footer-placeholder"></div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <p>João Pessoa como só os locais conhecem.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <p>Roteiros exclusivos, informações práticas e aquela dica que só quem mora sabe dar</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <!-- TODO: Add links -->
+                <a href="#" title="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+                <a href="#" title="Twitter">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" title="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </div>
+        </main>
+    </section>
+
+    <section class="image-grid">
+        <a href="#" class="image-card height-2">
+            <img src="images/3.jpeg" alt="Barra de Mamanguape">
+            <div class="image-card-content">
+                <h3 class="image-card-title">Lorem Ypsum</h3>
+                <p class="image-card-location">Barra de Mamanguape, PB</p>
+            </div>
+            <div class="arrow-icon">
+                <i data-lucide="arrow-up-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="image-card">
+            <img src="images/1.jpg" alt="Cabedelo">
+            <div class="image-card-content">
+                <h3 class="image-card-title">Lorem Ypsum</h3>
+                <p class="image-card-location">Cabedelo, PB</p>
+            </div>
+            <div class="arrow-icon">
+                <i data-lucide="arrow-up-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="image-card">
+            <img src="images/3.jpeg" alt="João Pessoa">
+            <div class="image-card-content">
+                <h3 class="image-card-title">Lorem Ypsum</h3>
+                <p class="image-card-location">João Pessoa, PB</p>
+            </div>
+            <div class="arrow-icon">
+                <i data-lucide="arrow-up-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="image-card width-2">
+            <img src="images/2.jpeg" alt="Coqueirinho">
+            <div class="image-card-content">
+                <h3 class="image-card-title">Lorem Ypsum</h3>
+                <p class="image-card-location">Coqueirinho, PB</p>
+            </div>
+            <div class="arrow-icon">
+                <i data-lucide="arrow-up-right"></i>
+            </div>
+        </a>
+    </section>
+
+    <section class="seja-local">
+        <div class="content-left">
+            <h2>Seja<br>Local</h2>
+            <p>A Rota Nativa nasceu para transformar o jeito como você descobre novos lugares. Nosso propósito é simples: conectar você ao autêntico, ao que está além dos roteiros óbvios, e fazer você viver o destino como se fosse parte dele.</p>
+            <p>Combinamos tecnologia inteligente no WhatsApp e o olhar de quem conhece os lugares como ninguém - os nativos. Aqui, você não encontra só informações, mas experiências feitas para você viver o lugar, não apenas visitá-lo.</p>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-list-icon">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Exclusividade</h3>
+                        <p>Cada rota é pensada para ser única, assim como você.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-list-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Pertencimento</h3>
+                        <p>Porque viajar é mais do que chegar, é se conectar.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-list-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Autenticidade</h3>
+                        <p>Vivencie os destinos do jeito que só os locais conhecem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="video-preview">
+                <img src="images/mar.jpg" alt="Preview do vídeo principal">
+
+                <div class="video-grid">
+                    <div class="video-thumbnail">
+                        <img src="https://picsum.photos/400/225" alt="Thumbnail 1">
+                        <div class="play-button">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="https://picsum.photos/400/225" alt="Thumbnail 2">
+                        <div class="play-button">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="como-funciona" id="como-funciona">
+        <div class="container">
+            <h1>Como funciona em 3 passos</h1>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <img src="images/1.jpg" class="beach-img">
+                </div>
+                
+                <div class="card purple-card">
+                    <div class="details">
+                        <h2 class="card-title">Compre seus créditos</h2>
+                        <p class="card-text">Ative seu acesso às dicas mais valiosas e desbloqueie os melhores roteiros.</p>
+                    </div>
+                    <div class="circle-button">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="images/3.jpeg" class="beach-img">
+                </div>
+            </div>
+            
+            <div class="grid-container-bottom">
+                <div class="card purple-card">
+                    <div class="details">
+                        <h2 class="card-title">Converse com nossa IA no WhatsApp</h2>
+                        <p class="card-text">Pergunte sobre os destinos, receba recomendações exclusivas e personalize sua experiência</p>
+                    </div>
+                    <div class="circle-button">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="images/1.jpg" class="beach-img">
+                </div>
+                
+                <div class="card pink-card">
+                    <div class="details">
+                        <h2 class="card-title">Receba dicas exclusivas</h2>
+                        <p class="card-text">Descubra lugares únicos, experiências autênticas e viva o destino como um nativo.</p>
+                    </div>
+                    <div class="circle-button">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <main>
+            <div class="cta-left">
+                <h2 class="cta-title">Pronto para explorar como um nativo?</h2>
+            </div>
+            <div class="cta-right">
+                <p class="cta-text">Clique no botão e comece agora a planejar sua próxima jornada. Dicas exclusivas, roteiros únicos e uma experiência que só a Rota Nativa pode oferecer.</p>
+                <a href="#" class="cta-button">
+                    <span>Comece agora sua rota</span>
+                    <i data-lucide="move-right"></i>
+                </a>
+            </div>
+        </main>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/loadComponents.js" defer></script>
     <script src="js/scripts.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
