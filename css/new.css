@@ -89,8 +89,6 @@
 .discover-button {
     display: inline-flex;
     align-items: center;
-    background: white;
-    color: #333;
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -98,6 +96,10 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+}
+
+.discover-button:hover {
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -172,7 +174,7 @@
 
 .image-card.height-2 {
     grid-row: span 2;
-    aspect-ratio: 1/2;
+    aspect-ratio: 1/2.1;
 }
 
 .image-card.width-2 {
@@ -259,11 +261,11 @@
     }
 
     .image-card-title {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .image-card-location {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -319,10 +321,46 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #f4f4f4;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.background-purple {
+    background: #8464c6;
+}
+
+.background-violet {
+    background: #9f62ac;
+}
+
+.background-pink {
+    background: #f37b7b;
+}
+
+.background-white {
+    background: white;
+}
+
+.text-gray {
+    color: #333;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-purple {
+    color: #8464c6;
+}
+
+.text-violet {
+    color: #9f62ac;
+}
+
+.text-pink {
+    color: #f37b7b;
 }
 
 .feature-text {
@@ -471,6 +509,13 @@ h1 {
     display: flex;
 }
 
+.violet-card {
+    background-color: #9f62ac;
+    color: white;
+    padding: 30px;
+    display: flex;
+}
+
 .card-title {
     font-size: 28px;
     font-weight: bold;
@@ -608,4 +653,36 @@ h1 {
     .cta-title {
         font-size: 40px;
     }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section div {
+        font-size: 14px;
+    }
+}
+
+.footer-section {
+    background-color: #7b5cb6;
+    color: white;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.footer-section main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-section a {
+    text-decoration: none;
 }
