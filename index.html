@@ -11,6 +11,23 @@
       gtag('config', 'AW-17208986999');
     </script>
 
+    <!-- Event snippet for Clique de saída conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17208986999/o4o3CJTh_90aEPea8Y1A',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rota Nativa - Mais que turista, um nativo</title>
@@ -48,8 +65,9 @@
             <a href="/">Home</a>
             <a href="#seja-local">Seja Local</a>
             <a href="#como-funciona">Como Funciona</a>
-<!--            <a href="#contato">Contato</a>-->
-            <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="cta-button">Comece sua Rota</a>
+            <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="cta-button">
+                Comece sua Rota
+            </a>
         </nav>
     </header>
 
@@ -57,7 +75,10 @@
         <main>
             <div class="hero-content">
                 <h1 class="hero-title">Mais que turista,<br>um nativo.</h1>
-                <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="discover-button background-white text-gray">
+                <a href="#"
+                   onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');"
+                   class="discover-button background-white text-gray"
+                >
                     Descubra Agora <i data-lucide="move-right"></i>
                 </a>
             </div>
@@ -78,7 +99,7 @@
             </div>
 
             <div class="social-links">
-                <a href="https://wa.me/message/WVIIKLCV5JTYH1" title="Whatsapp">
+                <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" title="Whatsapp">
                     <i data-lucide="message-circle"></i>
                 </a>
                 <a href="https://www.instagram.com/rotanativa.br" title="Instagram" rel="me">
@@ -91,7 +112,7 @@
     <section class="image-grid">
         <h1 class="section-title">Conheça alguns dos nossos locais exclusivos</h1>
 
-        <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="image-card height-2">
+        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="image-card height-2">
             <img src="images/3-new.jpg" alt="Barra de Mamanguape">
             <div class="image-card-content">
                 <h3 class="image-card-title">Uma praia paradisíaca onde é possível almoçar dentro do mar.</h3>
@@ -102,7 +123,7 @@
             </div>
         </a>
 
-        <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="image-card">
+        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="image-card">
             <img src="images/1-new.jpg" alt="Cabedelo">
             <div class="image-card-content">
                 <h3 class="image-card-title">Onde rio e mar se encontram, experiências inesquecíveis acontecem.</h3>
@@ -113,7 +134,7 @@
             </div>
         </a>
 
-        <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="image-card">
+        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="image-card">
             <img src="images/4.jpg" alt="João Pessoa">
             <div class="image-card-content">
                 <h3 class="image-card-title">Falésias coloridas e mirantes incríveis: aqui, cada vista é um espetáculo.</h3>
@@ -124,7 +145,7 @@
             </div>
         </a>
 
-        <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="image-card width-2">
+        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="image-card width-2">
             <img src="images/2.jpeg" alt="João Pessoa">
             <div class="image-card-content">
                 <h3 class="image-card-title">No extremo leste das Américas, o sol nasce primeiro e as melhores histórias também.</h3>
@@ -174,7 +195,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="discover-button background-purple text-white">
+                    <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="discover-button background-purple text-white">
                         Descubra Agora <i data-lucide="move-right"></i>
                     </a>
                 </div>
@@ -217,7 +238,7 @@
                     </div>
 
                     <div class="circle-button">
-                        <a href="https://wa.me/message/WVIIKLCV5JTYH1">
+                        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');">
                             <i data-lucide="chevron-right"></i>
                         </a>
                     </div>
@@ -234,7 +255,7 @@
                     </div>
 
                     <div class="circle-button">
-                        <a href="https://wa.me/message/WVIIKLCV5JTYH1">
+                        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');">
                             <i data-lucide="chevron-right"></i>
                         </a>
                     </div>
@@ -253,7 +274,7 @@
                     </div>
 
                     <div class="circle-button">
-                        <a href="https://wa.me/message/WVIIKLCV5JTYH1">
+                        <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');">
                             <i data-lucide="chevron-right"></i>
                         </a>
                     </div>
@@ -273,7 +294,7 @@
             </div>
             <div class="cta-right">
                 <p class="cta-text">Clique no botão e comece agora a planejar sua próxima jornada. Dicas exclusivas, roteiros únicos e uma experiência que só a Rota Nativa pode oferecer.</p>
-                <a href="https://wa.me/message/WVIIKLCV5JTYH1" class="cta-button">
+                <a href="#" onclick="return gtag_report_conversion('https://wa.me/message/WVIIKLCV5JTYH1');" class="cta-button">
                     <span>Comece agora sua rota</span>
                     <i data-lucide="move-right"></i>
                 </a>
